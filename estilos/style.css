@@ -4,10 +4,12 @@
     --verde: #49a09d;
     --lilas: #5f2c82;
 }
+
 * {
     margin: 0;
     padding: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
 }
 
 body, html {
@@ -85,9 +87,9 @@ div.campo > input {
     transform: translateY(-10px);
 }
 
-form > input [type=submit] {
-    display: block;
-
+div.campo > input:focus-within {
+    background-color: white;
+    border: 0px;
 }
 
 label {
