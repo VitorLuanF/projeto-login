@@ -1,9 +1,95 @@
 @charset "UTF-8";
 
-/* paleta de cores
-Verde: #49a09d
-Lilas: #5f2c82
-Preto:
-Branco:
+:root {
+    --verde: #49a09d;
+    --lilas: #5f2c82;
+}
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
 
-*/
+body, html {
+    height: 100vh;
+    width: 100vw;
+    background-color: var(--lilas);
+}
+main {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+}
+
+section#login {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+
+    height: 515px;
+    width: 250px;
+    padding-bottom: 10px;
+    border-radius: 20px;
+    background-color: white;
+    box-shadow: 0px -2px 5px 2px rgba(0, 0, 0, 0.215);
+}
+
+section#login > div#imagem{
+    display: block;
+    background: url("../imagens/cidade.jpg") no-repeat left center;
+    background-size: cover;
+    height: 200px;
+    border-radius: 20px 20px 0 0;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.356);
+    
+}
+
+section#login > div#formulario {
+    display: block;
+    padding: 10px;
+}
+div#formulario > h1 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+div#formulario > p { 
+    font-size: 0.8em;
+}
+
+form > div.campo {
+    background-color: #5f2c82;
+    border: 2px solid #5f2c82;
+    width: 100%;
+    display: block;
+    height: 40px;
+    border-radius: 8px;
+    margin: 5px 0px;
+}
+div.campo > i {
+    color: white;
+    font-size: 1.9em;
+    width: 40px;
+    padding: 5px;
+}
+div.campo > input {
+    background-color: #94CFCD;
+    font-size: 1em;
+    width: calc(100% - 45px);
+    height: 100%;
+    border: 0px;
+    border-radius: 8px;
+    padding: 4px;
+    transform: translateY(-10px);
+}
+
+form > input [type=submit] {
+    display: block;
+
+}
+
+label {
+    display: none;
+}
