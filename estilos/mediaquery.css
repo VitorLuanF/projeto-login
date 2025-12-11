@@ -51,10 +51,10 @@ Grandes telas: acima de 1200px
         width: 950px;
         height: 350px;
         display: flex;
-        flex-flow: row-reverse nowrap;
     }
 
     section#login > div#imagem {
+        order: 1;
         width: 50%;
         height: 100%;
     }
